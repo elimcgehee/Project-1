@@ -1,4 +1,5 @@
-# project-1
-The starting point for a twitter bot, inspired by Christopher Strachey's love letter generator
-
-For the class "Radical Software", Eugene Lang College, Fall 2021
+Eli McGehee
+Radical Software, Fall 2021
+Project 1
+Sept 23, 2021
+python3
