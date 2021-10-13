@@ -1,0 +1,63 @@
+# Option 1: Select a message randomly from a list of messages
+# phrase_list = [ "Hi! My name is eli. :D", "I am a bot :>", 
+# "I do miscellaneous tasks! :)", "Beep Boop Beep.", 
+# "└[∵┌]└[ ∵ ]┘[┐∵]┘" ]
+# message = random.choice(phrase_list)
+
+# Option 2: A simple Mad Lib
+# string_template = "Some people like {} but I like {}."
+# word_list = [ "sports", "skorts", "meatloaf", "monsters", "hockey", "badminton" ]
+# word1 = random.choice(word_list)
+# word2 = random.choice(word_list)
+# message = string_template.format(word1,word2)
+
+# Option 3: Select from a list of possible Mad Libs
+# template_list = [ "My name is {} and I like {}.",
+# "People say I look like {} but only when I'm {}.",
+# "I think {} is the best at {}." ]
+# word_list1 = [ "Eli", "Gnarls", "@bot_ror" ]
+# word_list2 = [ "swimming in the ocean.", "attending classes, respectfully.", 
+# "being a Twitter bot via the Twitter API." ]
+# template = random.choice(template_list)
+# word1 = random.choice(word_list1)
+# word2 = random.choice(word_list2)
+# message = template.format(word1,word2)
+
+# Option 4: Using IF statements
+# string_template = "Hi there, I'm {}, the queen of {}."
+# word_list1 = [ "A bot", "being a bot" ]	  
+# word_list2_a = [ "robots", "playing gamez", "being a bot" ]
+# word_list2_b = [ "movies", "acting", "saying 'Hi! My name is Ror Bot, and i'm your mew personal assistant!'" ]
+# word1 = random.choice(word_list1)
+# if word1 == "A bot":
+#    word2 = random.choice(word_list2_a)
+# elif word1 == "being a bot":
+#    word2 = random.choice(word_list2_b)
+# message = string_template.format(word1,word2)
+#
+# GUI
+# import PySimpleGUI as sg
+# User Interface
+# sg.theme('Black')
+# layout = [ [sg.Text("Would You like to generate some random emojis?")],
+#            [sg.Text("View Tweet Here: https://twitter.com/eli___bot")],
+#            [sg.Button('Yes! Of Course...')], [sg.Button('Maybe? (Yes)')], [sg.Button('No. (Still yes...)')] ]
+# window = sg.Window('Emoji Time!', layout)
+# event, values = window.read()
+
+# Random Emoji Code
+string_template = " {} {}"
+emojis = [ 
+       "🤯",
+       "🥶", 
+       "👾", 
+       "👽", 
+       "👹", 
+       "💀", 
+       "😎", 
+       "😖" 
+       ]
+emoji1 = random.choice(emojis)
+emoji2 = random.choice(emojis)
+message = string_template.format(emoji1,emoji2)
+api.update_status("Random Emojis: " + message)
