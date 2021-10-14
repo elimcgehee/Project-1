@@ -1,3 +1,5 @@
+# Eli McGehee's Twitter Bot for TNS RS 2021
+
 # Imports/Constants
 import tweepy
 import random
